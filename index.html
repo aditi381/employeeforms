@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Form</title>
+<style>
+  /* CSS styles */
+  body {
+    background-color: #ffe5ec;
+    font-family: Arial, sans-serif;
+  }
+  
+  .employee-container {
+    background-color: #ffe5ec;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    width: 350px; 
+    height: 500px; 
+    margin: 50px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-control {
+    width: calc(100% - 16px); 
+    padding: 10px; 
+    margin: 0 auto 15px; 
+  }
+  
+  label {
+    font-weight: bold; 
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff66b2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ff3385; 
+  }
+  
+  .employee-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid #ffe5ec; 
+    transform: translateX(-50%);
+  }
+  
+  .button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    background-color:#ff7eb9;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-left: 73px;
+    margin-right: 40px;
+  }
+  
+  .button:hover {
+    background-color:#ff4d80;
+  }
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+</style>
+</head>
+<body>
+
+<div class="employee-container">
+  <form>
+    <div class="form-group">
+      <label for="employeeName1">Employee Name</label>
+      <input type="text" class="form-control" id="employeeName1" placeholder="Enter employee name">
+    </div>
+    <div class="form-group">
+      <label for="employeeEmail1">Email address</label>
+      <input type="email" class="form-control" id="employeeEmail1" placeholder="Enter email">
+    </div>
+    <button class="button">Click Me</button>
+  </form>
+</div>
+
+
+
+</body>
+</html>
+
